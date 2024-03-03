@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/musicDemo/static/css/main.836a944e.css",
-    "main.js": "/musicDemo/static/js/main.931ae09e.js",
+    "main.js": "/musicDemo/static/js/main.453fd5db.js",
     "static/media/intro.mp4": "/musicDemo/static/media/intro.09ccfd1e26d7c326dba1.mp4",
     "static/media/presentation.jpg": "/musicDemo/static/media/presentation.c08a059d1ab4e33094cc.jpg",
     "static/media/logo.svg": "/musicDemo/static/media/logo.ec67353190d483062838f6c43d72989c.svg",
     "index.html": "/musicDemo/index.html",
     "main.836a944e.css.map": "/musicDemo/static/css/main.836a944e.css.map",
-    "main.931ae09e.js.map": "/musicDemo/static/js/main.931ae09e.js.map"
+    "main.453fd5db.js.map": "/musicDemo/static/js/main.453fd5db.js.map"
   },
   "entrypoints": [
     "static/css/main.836a944e.css",
-    "static/js/main.931ae09e.js"
+    "static/js/main.453fd5db.js"
   ]
 }
