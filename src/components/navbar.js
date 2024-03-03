@@ -7,7 +7,7 @@ const Navbar = ({textAnimationProgress}) => {
         { name: "THE TECHNOLOGY", link: "/" },
         { name: "TECH SPOTLIGHT", link: "/" },
         { name: "WHY MUSIC?", link: "/" }
-      ];
+    ];
     return (
         <div className='nav-container'>
             <img src={logo} alt='logo' style={{height: '30px', width: '30px'}} />
@@ -18,17 +18,14 @@ const Navbar = ({textAnimationProgress}) => {
                         <a href={item.link} className="nav-link">{item.name}</a>
                         {index===0 &&
                              
-       <div className='scroll-progress-wra'>
-       <div className='scroll-progress' style={{width: `${textAnimationProgress * 100}%`}}></div>
-     </div>
+                            <div className='scroll-progress-wra'>
+                            <div className='scroll-progress' style={{width: `${textAnimationProgress * 100}%`}}></div>
+                            </div>
                         }
                     </li>
                 ))}
                 </ul>
             </div>
-           
-        
-            
         </div>
     );
 };

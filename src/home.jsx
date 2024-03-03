@@ -91,11 +91,8 @@ const Home = () => {
           
         </SwiperSlide>
       </Swiper>
-            {/* 白色块元素，用于创建渐出效果 */}
-            <BlockAnimation direction={animationDirection} triggerAnimation={triggerAnimation} />
-
-
-
+      {/* 白色块元素，用于创建渐出效果 */}
+      <BlockAnimation direction={animationDirection} triggerAnimation={triggerAnimation} />x
     </div>
   );
 };

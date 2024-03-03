@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState,useMemo } from 'react';
 import { gsap } from 'gsap';
 
 const TextAnimation = ({ onTextAnimationComplete,allowTextScroll,onProgressChange,textAtBottom }) => {
@@ -6,9 +6,28 @@ const TextAnimation = ({ onTextAnimationComplete,allowTextScroll,onProgressChang
   const [scrollPosition, setScrollPosition] = useState(0);
   const [animationCompleted, setAnimationCompleted] = useState(false);
   const maxLine = 150;
-  const textLines = ["When you want something,", "all the universe conspires", "n helping you to achieve it.", "Paulo Coelho", "","","Feed is that conspiracy:",
-    "the conspiracy of trust.", "","", "Trust is the single", "most important ingredient ", " "," ",
-    "Boston Consulting Group ", "and the World Economic Forum ", "forecast the digital economy ", "to be worth between ", "1.5 and 2.5 trillion dollars","by 2016.","",""];
+  const textLines = useMemo(() => [
+    "When you want something,",
+    "all the universe conspires",
+    "n helping you to achieve it.",
+    "Paulo Coelho",
+    "",
+    "Feed is that conspiracy:",
+    "the conspiracy of trust.",
+    "",
+    "Trust is the single",
+    "most important ingredient ",
+    " ",
+    " ",
+    "Boston Consulting Group ",
+    "and the World Economic Forum ",
+    "forecast the digital economy ",
+    "to be worth between ",
+    "1.5 and 2.5 trillion dollars",
+    "by 2016.",
+    "",
+    ""
+  ], []); 
 
   useEffect(() => {
     if (textAtBottom) {
@@ -37,6 +56,7 @@ const TextAnimation = ({ onTextAnimationComplete,allowTextScroll,onProgressChang
     };
   
     window.addEventListener('wheel', handleWheel, { passive: false });
+    window.addEventListener('tou', handleWheel, { passive: false });
   
     return () => {
       window.removeEventListener('wheel', handleWheel);

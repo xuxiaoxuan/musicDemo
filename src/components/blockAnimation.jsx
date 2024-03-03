@@ -1,12 +1,11 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap';
 import './blockAnimation.css';
 
 const BlocksAnimation = ({ direction, triggerAnimation }) => {
-  // 使用 React refs 来引用 DOM 节点
-  const blockRef = React.useRef(null);
-  const whiteBlock = React.useRef(null);
-  const purpleBlock = React.useRef(null);
+  const blockRef = useRef(null);
+  const whiteBlock = useRef(null);
+  const purpleBlock = useRef(null);
 
   // 监听 direction 和 triggerAnimation 的变化来触发动画
   useEffect(() => {
