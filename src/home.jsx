@@ -88,7 +88,7 @@ const Home = () => {
         </SwiperSlide>
 
         <SwiperSlide className='swiper-slide--2'>
-            22
+          
         </SwiperSlide>
       </Swiper>
             {/* 白色块元素，用于创建渐出效果 */}

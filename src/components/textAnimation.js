@@ -62,10 +62,10 @@ const TextAnimation = ({ onTextAnimationComplete,allowTextScroll,onProgressChang
       const maxScrollPosition = (textLines.length ) * maxLine;
       const progressItem = scrollPosition / maxScrollPosition;
 
-      console.log('maxScrollPosition-------',maxScrollPosition,fontSize)
-      console.log('opacity-------',opacity)
-      console.log(index,'scrollPosition',scrollPosition,progress)
-      console.log(index,'y',Math.abs(progress > 0 ? Math.min(progress * 0.5, maxLine) : 0))
+      // console.log('maxScrollPosition-------',maxScrollPosition,fontSize)
+      // console.log('opacity-------',opacity)
+      // console.log(index,'scrollPosition',scrollPosition,progress)
+      // console.log(index,'y',Math.abs(progress > 0 ? Math.min(progress * 0.5, maxLine) : 0))
       onProgressChange(progressItem); // 将进度信息传递给父组件
   
       gsap.to(element, {
