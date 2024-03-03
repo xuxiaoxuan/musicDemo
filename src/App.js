@@ -1,11 +1,15 @@
 import './App.css';
-import SwiperItem from './components/swiper';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './home'; 
 
 function App() {
   return (
-    <div className="App">
-      <SwiperItem />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

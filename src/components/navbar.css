@@ -1,0 +1,47 @@
+/* 定位整个容器 */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    color: #E8E6E3;
+    padding: 2rem 2.5rem; /* 已经是rem单位，保持不变 */
+    display: flex;
+    align-items: center;
+}
+
+/* 导航列表样式 */
+.nav-list {
+    margin-left: 2rem; /* 已经是rem单位，保持不变 */
+    flex: 1;
+    display: flex;
+    gap: 2rem; /* 已经是rem单位，保持不变 */
+    font-size: 2rem; /* 已经是rem单位，保持不变 */
+    list-style: none;
+}
+.nav-link {
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+
+/* 菜单图标样式 */
+.menu-icon {
+    width: 2.25rem; /* 已经是rem单位，保持不变 */
+    height: 12.5rem; /* 将200px转换为rem，假设基础字体大小为16px */
+    color: #fff;
+    font-size: 3rem; /* 已经是rem单位，保持不变 */
+    line-height: 3rem; /* 已经是rem单位，保持不变 */
+}
+.scroll-progress-wra {
+    margin: 0.5rem auto; /* 将4px转换为rem */
+    width: 100%; 
+    height: 0.5rem; /* 将6px转换为rem */
+    background-Color: #b3b3b3;
+    border-radius: 0.0625rem; /* 将1px转换为rem */
+}
+.scroll-progress {
+    height: 100%;
+    background-color: #fff;
+  
+}

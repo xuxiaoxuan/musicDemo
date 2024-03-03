@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* 设置基础字体大小 */
+html {
+  font-size: 16px; /* 通常以16px作为基础字体大小 */
+}
